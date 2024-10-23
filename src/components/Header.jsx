@@ -16,6 +16,9 @@ const Header = () => {
   const handleSearchClick = () => {
     console.log("Search Query: ", searchQuery);
   };
+  const handleLogoClick = () => {
+    navigate("/"); // Redirect to home page
+  };
 
   return (
     <AppBar position="static" sx={{ backgroundColor: "#001F3F" }}>
@@ -25,6 +28,7 @@ const Header = () => {
             src={logo}
             alt="Ethihat Logo"
             style={{ height: "40px", verticalAlign: "middle" }}
+            onClick={handleLogoClick}
           />
         </Typography>
 

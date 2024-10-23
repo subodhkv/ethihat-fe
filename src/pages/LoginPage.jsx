@@ -20,13 +20,6 @@ const LoginPage = () => {
     const emailOrUsername = event.target.email.value;
     const password = event.target.password.value;
 
-    // // Email format validation
-    // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // if (!emailRegex.test(emailOrUsername)) {
-    //   setError("Please enter a valid email address.");
-    //   return;
-    // }
-
     try {
       // Update the base URL to the correct endpoint
       const response = await axios.post("http://localhost:8081/api/login", {

@@ -1,7 +1,8 @@
 /* src/css/LoginPage.css */
 
 .container {
-  margin-top: 64px; /* Adjusting the top margin as per your design */
+  margin-top: 64px;
+  padding-bottom: 70px; /* Adjusting the top margin as per your design */
 }
 
 .box {
